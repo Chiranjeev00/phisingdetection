@@ -39,3 +39,4 @@ Visit the local server created at:
 
 ## Hackathon Demo Mode
 All API responses have an intentional `1500-2000ms` delay to simulate heavy ML processing during the presentation, making the UI loading spinners clear and visible to judges.
+this is new changes
