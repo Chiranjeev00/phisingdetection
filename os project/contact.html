@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | PhishGuard AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🛡️</span> PhishGuard <span style="font-weight: 300;">AI</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="detect.html">Detect</a>
+                <a href="dashboard.html">Dashboard</a>
+                <a href="contact.html" class="active">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container" style="max-width: 600px;">
+        <h1 class="text-green" style="margin-bottom: 20px; text-align: center;">Secure Contact Intel</h1>
+        
+        <div class="card">
+            <p style="margin-bottom: 30px; text-align: center; color: var(--text-muted);">Reach out to the security team for report intelligence or system issues.</p>
+            
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Operative Name</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Secure Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Encrypted Payload (Message)</label>
+                    <textarea id="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn" style="width: 100%;">Send Secure Message</button>
+            </form>
+        </div>
+    </main>
+
+    <footer style="position: absolute; bottom: 0; width: 100%;">
+        <p>SIH25159 Project Submission | Real-Time AI/ML-Based Phishing Detection</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

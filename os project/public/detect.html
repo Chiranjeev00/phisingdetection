@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scan | PhishGuard AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🛡️</span> PhishGuard <span style="font-weight: 300;">AI</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="detect.html" class="active">Detect</a>
+                <a href="dashboard.html">Dashboard</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1 class="text-green" style="margin-bottom: 20px;">Threat Detection Engine</h1>
+        
+        <div class="card">
+            <div class="tabs">
+                <div class="tab active" onclick="switchTab('urlTab')">URL Scanner</div>
+                <div class="tab" onclick="switchTab('emailTab')">Email Header/Body Scanner</div>
+            </div>
+
+            <!-- URL Scanner -->
+            <div id="urlTab" class="tab-content">
+                <form id="urlForm">
+                    <div class="form-group">
+                        <label for="urlInput">Enter URL / Domain:</label>
+                        <input type="text" id="urlInput" placeholder="http://example.com/login" required>
+                    </div>
+                    <button type="submit" id="urlSubmitBtn" class="btn">Analyze Target</button>
+                    <div id="urlLoader" class="loader">Extracting Features</div>
+                </form>
+                
+                <div id="urlResult"></div>
+            </div>
+
+            <!-- Email Scanner -->
+            <div id="emailTab" class="tab-content" style="display: none;">
+                <form id="emailForm">
+                    <div class="form-group">
+                        <label for="emailInput">Paste Email Content:</label>
+                        <textarea id="emailInput" rows="6" placeholder="Dear Customer, Urgent action required to verify your account..." required></textarea>
+                    </div>
+                    <button type="submit" id="emailSubmitBtn" class="btn">Analyze NLP Semantics</button>
+                    <div id="emailLoader" class="loader">Processing Language Metrics</div>
+                </form>
+                
+                <div id="emailResult"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>SIH25159 Project Submission | Real-Time AI/ML-Based Phishing Detection</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

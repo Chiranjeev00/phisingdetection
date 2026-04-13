@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | PhishGuard AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🛡️</span> PhishGuard <span style="font-weight: 300;">AI</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html" class="active">About</a>
+                <a href="detect.html">Detect</a>
+                <a href="dashboard.html">Dashboard</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1 class="text-green" style="margin-bottom: 20px;">System Architecture & Overview</h1>
+        
+        <div class="card">
+            <h2 style="margin-bottom: 15px;">What is Phishing?</h2>
+            <p style="margin-bottom: 20px; line-height: 1.6;">Phishing is a cyber attack where attackers disguise themselves as a trusted entity to deceive victims into opening an email, instant message, or text message. The recipient is then tricked into clicking a malicious link, which can lead to the installation of malware or the revealing of sensitive information.</p>
+            
+            <h2 style="margin-bottom: 15px;">How Our System Works</h2>
+            <p style="margin-bottom: 20px; line-height: 1.6;">Our detection algorithms utilize heuristic-based static analysis to evaluate URLs and Emails at lightning speed. It bypasses the need for massive database lookups by actively inspecting the structural and semantic integrity of the target.</p>
+            
+            <div style="background: var(--bg-input); padding: 20px; border-radius: 8px; border-left: 4px solid var(--neon-blue); font-family: var(--font-mono);">
+                <p><span class="text-blue">STEP 1:</span> Input ingested via REST API.</p>
+                <p><span class="text-blue">STEP 2:</span> Lexical feature extraction (dot count, length, protocol).</p>
+                <p><span class="text-blue">STEP 3:</span> Semantic NLP check (urgency cues, suspicious keywords).</p>
+                <p><span class="text-blue">STEP 4:</span> Multi-layered confidence scoring.</p>
+                <p><span class="text-blue">STEP 5:</span> JSON payload returned to frontend with explainability.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>SIH25159 Project Submission | Real-Time AI/ML-Based Phishing Detection</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

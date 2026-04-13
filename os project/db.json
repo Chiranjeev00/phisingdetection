@@ -1,0 +1,29 @@
+{
+  "scans": {
+    "total": 2,
+    "phishing": 0,
+    "safe": 2
+  },
+  "history": [
+    {
+      "type": "URL",
+      "target": "https://www.netacad.com/",
+      "result": "Safe",
+      "date": "2026-04-05T18:22:26.538Z"
+    },
+    {
+      "type": "URL",
+      "target": "https://www.netacad.com/",
+      "result": "Safe",
+      "date": "2026-04-05T18:22:17.710Z"
+    }
+  ],
+  "messages": [
+    {
+      "name": "Chiranjeev Singh",
+      "email": "chiranjeevsingh005@gmail.com",
+      "message": "hihih",
+      "date": "2026-04-05T18:21:28.026Z"
+    }
+  ]
+}
