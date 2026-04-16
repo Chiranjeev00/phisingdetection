@@ -14,7 +14,7 @@ function setLoading(buttonId, loaderId, isLoading) {
     if(loader) loader.style.display = isLoading ? 'block' : 'none';
 }
 
-// Display results for URL/Email parsing
+
 function displayResult(containerId, data) {
     const container = document.getElementById(containerId);
     if (!container) return;
@@ -51,7 +51,7 @@ function displayResult(containerId, data) {
     }, 100);
 }
 
-// Event Listeners
+
 if (urlForm) {
     urlForm.addEventListener('submit', async (e) => {
         e.preventDefault();
